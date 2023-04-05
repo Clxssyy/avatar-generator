@@ -59,7 +59,7 @@ function generate() {
   pupilImage.src = pupilImagePath + pupil;
   mouthImage.src = mouthImagePath + mouth;
 
-  // wait for imagse to load before rendering them
+  // wait for images to load before rendering them
   backgroundImage.addEventListener('load', function () {
     ctx.drawImage(backgroundImage, 0, 0, 640, 360);
   });
