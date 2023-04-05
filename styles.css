@@ -91,6 +91,10 @@ button:active {
   display: flex;
 }
 
+.output {
+  text-align: left;
+}
+
 #contact {
   margin: 0;
 }
