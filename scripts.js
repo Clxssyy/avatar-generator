@@ -1,29 +1,23 @@
-function generate() {
-  const backgrounds = [
-    'Black.png',
-    'Blue.png',
-    'Green.png',
-    'Grey.png',
-    'Purple.png',
-  ];
-  const props = ['Blood.png', 'Colors.png', 'Leaves.png', 'Numbers.png'];
-  const colors = [
-    'Black.png',
-    'Blue.png',
-    'Green.png',
-    'Red.png',
-    'Yellow.png',
-  ];
-  const eyes = ['Small.png', 'Wide.png'];
-  const pupils = ['Black.png', 'Green.png', 'Purple.png', 'Red.png'];
-  const mouths = [
-    'O-Black.png',
-    'O-Yellow.png',
-    'Sad-Blue.png',
-    'Sad-Purple.png',
-    'Straight-Blue.png',
-  ];
+const backgrounds = [
+  'Black.png',
+  'Blue.png',
+  'Green.png',
+  'Grey.png',
+  'Purple.png',
+];
+const props = ['Blood.png', 'Colors.png', 'Leaves.png', 'Numbers.png'];
+const colors = ['Black.png', 'Blue.png', 'Green.png', 'Red.png', 'Yellow.png'];
+const eyes = ['Small.png', 'Wide.png'];
+const pupils = ['Black.png', 'Green.png', 'Purple.png', 'Red.png'];
+const mouths = [
+  'O-Black.png',
+  'O-Yellow.png',
+  'Sad-Blue.png',
+  'Sad-Purple.png',
+  'Straight-Blue.png',
+];
 
+function generate() {
   const canvas = document.getElementById('display');
   const ctx = canvas.getContext('2d');
 
