@@ -1,10 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+
 body {
   display: grid;
   justify-items: center;
+  background: rgb(255, 232, 183);
+  font-family: 'Delicious Handrawn', cursive;
+}
+
+h1,
+h2 {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+p {
+  font-size: 18px;
 }
 
 canvas {
   border: 2px solid black;
+  border-radius: 10px;
+  background-color: white;
 }
 
 #controls {
@@ -18,4 +34,20 @@ canvas {
   width: max-content;
   align-items: center;
   justify-items: center;
+}
+
+button {
+  padding: 0px 10px;
+  font-size: larger;
+  font-family: 'Delicious Handrawn', cursive;
+  border-radius: 10px;
+  background: rgb(221, 199, 151);
+}
+
+button:hover {
+  scale: 1.1;
+}
+
+button:active {
+  scale: 0.9;
 }
