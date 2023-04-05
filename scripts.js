@@ -90,7 +90,7 @@ function download() {
   createEl.href = canvasUrl;
 
   // This is the name of our downloaded file
-  createEl.download = 'download-this-canvas';
+  createEl.download = 'your-avatar';
   createEl.click();
   createEl.remove();
 }
