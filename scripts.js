@@ -59,28 +59,36 @@ function generate() {
   pupilImage.src = pupilImagePath + pupil;
   mouthImage.src = mouthImagePath + mouth;
 
-  // wait for images to load before rendering them
-  backgroundImage.addEventListener('load', function () {
-    ctx.drawImage(backgroundImage, 0, 0, 640, 360);
-  });
+  // load images
+  function loadImages() {
+    let count = 0;
 
-  propImage.addEventListener('load', function () {
-    ctx.drawImage(propImage, 0, 0, 640, 360);
-  });
-  colorImage.addEventListener('load', function () {
-    ctx.drawImage(colorImage, 0, 0, 640, 360);
-  });
+    // draw images
+    function drawImages() {
+      // increment loaded image count until they're all loaded
+      count++;
 
-  eyeImage.addEventListener('load', function () {
-    ctx.drawImage(eyeImage, 0, 0, 640, 360);
-  });
-  pupilImage.addEventListener('load', function () {
-    ctx.drawImage(pupilImage, 0, 0, 640, 360);
-  });
+      // when all images are loaded start to draw them in order
+      if (count === 6) {
+        ctx.drawImage(backgroundImage, 0, 0, 640, 360);
+        ctx.drawImage(propImage, 0, 0, 640, 360);
+        ctx.drawImage(colorImage, 0, 0, 640, 360);
+        ctx.drawImage(eyeImage, 0, 0, 640, 360);
+        ctx.drawImage(pupilImage, 0, 0, 640, 360);
+        ctx.drawImage(mouthImage, 0, 0, 640, 360);
+      }
+    }
 
-  mouthImage.addEventListener('load', function () {
-    ctx.drawImage(mouthImage, 0, 0, 640, 360);
-  });
+    // when an image loads try to draw them
+    backgroundImage.addEventListener('load', drawImages);
+    propImage.addEventListener('load', drawImages);
+    colorImage.addEventListener('load', drawImages);
+    eyeImage.addEventListener('load', drawImages);
+    pupilImage.addEventListener('load', drawImages);
+    mouthImage.addEventListener('load', drawImages);
+  }
+
+  loadImages();
 
   // Set output to match generated results
   const backgroundOutput = document.getElementById('background');
