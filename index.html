@@ -13,20 +13,49 @@
     />
   </head>
   <body>
-    <h1>Avatar Generator</h1>
-    <div id="generator">
-      <canvas id="display" width="640" height="360"></canvas>
-      <div id="controls">
+    <div class="header">
+      <h1>Avatar Generator</h1>
+    </div>
+    <div class="body">
+      <div class="generator">
+        <div class="leftBody">
+          <h2>Instructions</h2>
+          <div class="container">
+            <p>
+              The instructions are simple, there is two buttons. <br /><br />
+              - The first button, labeled 'Generate', will generate a random
+              avatar from the available assets. <br /><br />
+              - The second button, labeled 'Download', will download the avatar
+              displayed.
+            </p>
+          </div>
+        </div>
+        <canvas id="display" width="640" height="360"></canvas>
+        <div>
+          <div class="rightBody">
+            <h2>Output</h2>
+            <div class="container">
+              <p>
+                Background: <span id="background">test</span><br />
+                Prop: <span id="prop">test</span><br />
+                Color: <span id="color">test</span><br />
+                Eye Type: <span id="eye">test</span><br />
+                Pupil Color: <span id="pupil">test</span><br />
+                Mouth: <span id="mouth">test</span><br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="controls">
         <button onclick="generate()">Generate</button>
         <button onclick="download()">Download</button>
       </div>
-    </div>
-    <div>
-      <h2>Contact</h2>
-      <div class="backdrop">
-        <p>If you would like something added or notice something not working</p>
+      <div class="wide container">
+        <h2 id="contact">Contact</h2>
         <p>
-          as intended, feel free to reach out via the project repository:
+          If you would like something added or notice something not working as
+          intended, feel free to reach out via the project repository:
           <a
             id="gh"
             href="https://github.com/Clxssyy/AvatarGenerator"
@@ -35,6 +64,9 @@
           >
         </p>
       </div>
+    </div>
+    <div class="footer">
+      <p>temp</p>
     </div>
   </body>
 </html>
