@@ -1,3 +1,5 @@
+const ATTRIBUTE = 6;
+
 const backgrounds = [
   'Black.png',
   'Blue.png',
@@ -63,7 +65,7 @@ function generate() {
       count++;
 
       // when all images are loaded start to draw them in order
-      if (count === 6) {
+      if (count === ATTRIBUTE) {
         ctx.drawImage(backgroundImage, 0, 0, 640, 360);
         ctx.drawImage(propImage, 0, 0, 640, 360);
         ctx.drawImage(colorImage, 0, 0, 640, 360);
