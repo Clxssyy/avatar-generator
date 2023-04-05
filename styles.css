@@ -1,0 +1,21 @@
+body {
+  display: grid;
+  justify-items: center;
+}
+
+canvas {
+  border: 2px solid black;
+}
+
+#controls {
+  gap: 3px;
+}
+
+#generator {
+  display: grid;
+  gap: 3px;
+  flex-direction: column;
+  width: max-content;
+  align-items: center;
+  justify-items: center;
+}
