@@ -84,7 +84,7 @@ function generate() {
 }
 
 function download() {
-  const canvas = document.getElementById('nft');
+  const canvas = document.getElementById('display');
   const canvasUrl = canvas.toDataURL();
   const createEl = document.createElement('a');
   createEl.href = canvasUrl;
