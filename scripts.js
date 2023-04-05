@@ -81,6 +81,24 @@ function generate() {
   mouthImage.addEventListener('load', function () {
     ctx.drawImage(mouthImage, 0, 0, 640, 360);
   });
+
+  // Set output to match generated results
+  const backgroundOutput = document.getElementById('background');
+  const propOutput = document.getElementById('prop');
+  const colorOutput = document.getElementById('color');
+  const eyeOutput = document.getElementById('eye');
+  const pupilOutput = document.getElementById('pupil');
+  const mouthOutput = document.getElementById('mouth');
+
+  backgroundOutput.textContent = background.substring(
+    0,
+    background.indexOf('.')
+  );
+  propOutput.textContent = prop.substring(0, prop.indexOf('.'));
+  colorOutput.textContent = color.substring(0, color.indexOf('.'));
+  eyeOutput.textContent = eye.substring(0, eye.indexOf('.'));
+  pupilOutput.textContent = pupil.substring(0, pupil.indexOf('.'));
+  mouthOutput.textContent = mouth.substring(0, mouth.indexOf('.'));
 }
 
 function download() {

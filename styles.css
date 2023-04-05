@@ -81,13 +81,6 @@ button:active {
   scale: 0.9;
 }
 
-.backdrop {
-  background: rgb(221, 199, 151);
-  border: 2px solid black;
-  padding: 4px;
-  border-radius: 10px;
-}
-
 #gh {
   text-decoration: none;
   color: black;
