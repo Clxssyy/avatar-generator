@@ -1,4 +1,4 @@
-const ATTRIBUTE = 6;
+const ATTRIBUTE = 7;
 
 const backgrounds = [
   'Black.png',
@@ -18,6 +18,7 @@ const mouths = [
   'Sad-Purple.png',
   'Straight-Blue.png',
 ];
+const accessories = ['Glasses.png', '3D-Glasses.png', 'Nerd.png'];
 
 function generate() {
   const canvas = document.getElementById('display');
@@ -30,6 +31,7 @@ function generate() {
   const eyeImage = new Image();
   const pupilImage = new Image();
   const mouthImage = new Image();
+  const accessoryImage = new Image();
 
   // Randomly pick each attribute
   const background =
@@ -39,6 +41,7 @@ function generate() {
   const eye = eyes[Math.floor(Math.random() * eyes.length)];
   const pupil = pupils[Math.floor(Math.random() * pupils.length)];
   const mouth = mouths[Math.floor(Math.random() * mouths.length)];
+  const accessory = accessories[Math.floor(Math.random() * accessories.length)];
 
   // set image sources
   const backgroundImagePath = '/images/Background/';
@@ -47,6 +50,7 @@ function generate() {
   const eyeImagePath = '/images/Eyes/';
   const pupilImagePath = '/images/Pupils/';
   const mouthImagePath = '/images/Mouth/';
+  const accessoryImagePath = '/images/Accessories/';
 
   backgroundImage.src = backgroundImagePath + background;
   propImage.src = propImagePath + prop;
@@ -54,6 +58,7 @@ function generate() {
   eyeImage.src = eyeImagePath + eye;
   pupilImage.src = pupilImagePath + pupil;
   mouthImage.src = mouthImagePath + mouth;
+  accessoryImage.src = accessoryImagePath + accessory;
 
   // load images
   function loadImages() {
@@ -72,6 +77,7 @@ function generate() {
         ctx.drawImage(eyeImage, 0, 0, 640, 360);
         ctx.drawImage(pupilImage, 0, 0, 640, 360);
         ctx.drawImage(mouthImage, 0, 0, 640, 360);
+        ctx.drawImage(accessoryImage, 0, 0, 640, 360);
       }
     }
 
@@ -82,6 +88,7 @@ function generate() {
     eyeImage.addEventListener('load', drawImages);
     pupilImage.addEventListener('load', drawImages);
     mouthImage.addEventListener('load', drawImages);
+    accessoryImage.addEventListener('load', drawImages);
   }
 
   loadImages();
@@ -93,6 +100,7 @@ function generate() {
   const eyeOutput = document.getElementById('eye');
   const pupilOutput = document.getElementById('pupil');
   const mouthOutput = document.getElementById('mouth');
+  const accessoryOutput = document.getElementById('accessory');
 
   backgroundOutput.textContent = background.substring(
     0,
@@ -103,6 +111,7 @@ function generate() {
   eyeOutput.textContent = eye.substring(0, eye.indexOf('.'));
   pupilOutput.textContent = pupil.substring(0, pupil.indexOf('.'));
   mouthOutput.textContent = mouth.substring(0, mouth.indexOf('.'));
+  accessoryOutput.textContent = accessory.substring(0, accessory.indexOf('.'));
 }
 
 function download() {
