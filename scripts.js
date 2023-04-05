@@ -18,7 +18,14 @@ const mouths = [
   'Sad-Purple.png',
   'Straight-Blue.png',
 ];
-const accessories = ['Glasses.png', '3D-Glasses.png', 'Nerd.png'];
+const accessories = [
+  'Glasses.png',
+  '3D-Glasses.png',
+  'Nerd-Glasses.png',
+  'Basket.png',
+  'Bunny-Ears.png',
+  'Thick-Glasses.png',
+];
 
 function generate() {
   const canvas = document.getElementById('display');
