@@ -64,13 +64,13 @@ function generate() {
   const accessory = accessories[Math.floor(Math.random() * accessories.length)];
 
   // set image sources
-  const backgroundImagePath = '/images/Background/';
-  const propImagePath = '/images/Props/';
-  const colorImagePath = '/images/Color/';
-  const eyeImagePath = '/images/Eyes/';
-  const pupilImagePath = '/images/Pupils/';
-  const mouthImagePath = '/images/Mouth/';
-  const accessoryImagePath = '/images/Accessories/';
+  const backgroundImagePath = 'images/Background/';
+  const propImagePath = 'images/Props/';
+  const colorImagePath = 'images/Color/';
+  const eyeImagePath = 'images/Eyes/';
+  const pupilImagePath = 'images/Pupils/';
+  const mouthImagePath = 'images/Mouth/';
+  const accessoryImagePath = 'images/Accessories/';
 
   backgroundImage.src = backgroundImagePath + background;
   propImage.src = propImagePath + prop;
