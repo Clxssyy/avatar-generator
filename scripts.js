@@ -23,13 +23,22 @@ const props = [
 ];
 const colors = ['Black.png', 'Blue.png', 'Green.png', 'Red.png', 'Yellow.png'];
 const eyes = ['Small.png', 'Wide.png'];
-const pupils = ['Black.png', 'Green.png', 'Purple.png', 'Red.png'];
+const pupils = [
+  'Black.png',
+  'Green.png',
+  'Purple.png',
+  'Red.png',
+  'Crazy.png',
+  'Snake.png',
+];
 const mouths = [
   'O-Black.png',
   'O-Yellow.png',
   'Sad-Blue.png',
   'Sad-Purple.png',
   'Straight-Blue.png',
+  'Monster-Teeth.png',
+  'Tongue.png',
 ];
 const accessories = [
   'Glasses.png',
@@ -38,6 +47,7 @@ const accessories = [
   'Basket.png',
   'Bunny-Ears.png',
   'Thick-Glasses.png',
+  'Eyebrows.png',
 ];
 
 function generate() {
