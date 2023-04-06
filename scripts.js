@@ -6,8 +6,21 @@ const backgrounds = [
   'Green.png',
   'Grey.png',
   'Purple.png',
+  'Yellow.png',
+  'Orange.png',
+  'Pink.png',
 ];
-const props = ['Blood.png', 'Colors.png', 'Leaves.png', 'Numbers.png'];
+const props = [
+  'Blood.png',
+  'Colors.png',
+  'Leaves.png',
+  'Numbers.png',
+  '3D-Numbers.png',
+  'Blue-Greens.png',
+  'Spiral.png',
+  'Sunflower.png',
+  'Vines.png',
+];
 const colors = ['Black.png', 'Blue.png', 'Green.png', 'Red.png', 'Yellow.png'];
 const eyes = ['Small.png', 'Wide.png'];
 const pupils = ['Black.png', 'Green.png', 'Purple.png', 'Red.png'];
