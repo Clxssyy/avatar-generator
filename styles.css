@@ -102,3 +102,29 @@ button:active {
 .wide {
   width: 640px;
 }
+
+.contact {
+  padding: 10px;
+}
+
+@media screen and (max-width: 1150px) {
+  .generator {
+    flex-direction: column;
+  }
+
+  .container {
+    height: auto;
+    width: 640px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #display {
+    display: none;
+  }
+
+  .container {
+    height: auto;
+    width: auto;
+  }
+}
