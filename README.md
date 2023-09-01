@@ -20,6 +20,6 @@ Layers are stacked onto the canvas in the given order.
 
 - Download your generated avatar to use or share.
 
-### Contribute
+## Contribute
 
 If you would like to add more images to the collection feel free to make a pull request using .png images only.
