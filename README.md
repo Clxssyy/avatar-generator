@@ -1,6 +1,6 @@
 # Avatar Generator
 
-**Avatar Generator** uses a collection of layers (Folders) in which an image (.png) is randomly selected from each layer and stacked onto the canvas. Once all of the images are stacked on the canvas you will see your newly generated avatar.
+**Avatar Generator** uses a collection of layers (Folders) in which an image (.png) is randomly selected from each layer and stacked onto the canvas. Once all of the images are stacked on the canvas you will see your newly generated avatar. Get started [here](https://clxssyy.github.io/avatar-generator/)
 
 ## Layers
 
